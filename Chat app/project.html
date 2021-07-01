@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+    <!-- <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="933931196930-9d1qd8o2k34pnedkse8uv6rvvvlnc1bd.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+</head>
+
+<body>
+
+    <nav>
+
+        <img class="logo" src="logo1.png" alt="">
+    </nav>
+    <!-- <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark">
+
+    </div>
+    <script>
+        function onSignIn(googleUser) {
+          // Useful data for your client-side scripts:
+          var profile = googleUser.getBasicProfile();
+          console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+          console.log('Full Name: ' + profile.getName());
+          console.log('Given Name: ' + profile.getGivenName());
+          console.log('Family Name: ' + profile.getFamilyName());
+          console.log("Image URL: " + profile.getImageUrl());
+          console.log("Email: " + profile.getEmail());
+  
+          // The ID token you need to pass to your backend:
+          var id_token = googleUser.getAuthResponse().id_token;
+          console.log("ID Token: " + id_token);
+        }
+      </script> -->
+    <div class="name">
+        <h1>CHITCHAT</h1>
+        
+    </div>
+    <div class="container">
+        <!-- <div class="message left">abc</div>
+        <div class="message right">def</div>
+        <div class="centre"> NEW USER HAS JOINED THE CHAT</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+<style>
+    h1 {
+        font-family: 'Stalinist One', cursive;
+    }
+</style>
+
+</html>
